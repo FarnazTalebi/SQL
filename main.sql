@@ -17,8 +17,7 @@ CREATE TABLE SaleProfit (
 );
 
 select 	Quantity*UnitPrice AS TotalPerUnit
-	from SaleTable
-	group by SaleID ;
+	from SaleTable ;
 select sum(TotalPerUnit) AS Totalsale
 	from SaleTable;
 	
